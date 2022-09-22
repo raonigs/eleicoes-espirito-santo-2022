@@ -16,7 +16,7 @@ con <- dbConnect(bigquery(), billing = 'project-eleicoes-rgs', project = 'basedo
 # Criando a variável de leitura utilizando a linguagem padrão SQL
 query = "SELECT * FROM `basedosdados.br_poder360_pesquisas.microdados`"
 
-# Obtendo a base de dados por meio da variável de coneção e de leitura do bigquery
+# Obtendo a base de dados por meio da variável de conexão e de leitura do bigquery
 df.sim = dbGetQuery(con, query)
 
 # Analise do bigquery, seleção de variáveis, filtros, agrupamento, estatística simples e visualização #
